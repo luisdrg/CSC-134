@@ -1,6 +1,6 @@
 // CSC 134
-// Hello World
-// Mr. Norris
+// M1T1
+// Luis Rivera Gonzalez
 // 1/15/25
 
 #include <iostream>
