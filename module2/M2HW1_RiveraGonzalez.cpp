@@ -31,12 +31,20 @@ int main() {
     cin >> withdrawal;
     balance -= withdrawal;
 
-    cout << "\n__________Account Information__________" << endl;
+    cout << "\n---Account Information---" << endl;
     cout << "Name: " << name << endl;
     cout << "Account #: " << account_number << endl;
     cout << "Balance: $" << fixed << setprecision(2) << balance << endl;
 
 //---------------------------------------------------------------- Question 2 ----------------------------------------------------------------
+
+// Question 2. Use the M2LAB1 program as a base for this question.
+// General Crates has found that the updated cost per cubic foot for storage is now 0.3, due to economic fluctuations.
+// Management has determined that they cannot currently raise their charge per cubic foot above 0.52 without losing customers.
+// Modify the program to match these new conditions.
+// (Suggested improvements: print all money amounts with two decimal places. The technique to do this is found in the “Gaddis Chapter 3 Slides” under Resources.)
+
+    cout << "\n\n-------------------------------- Question 2 --------------------------------" << endl;
 
     return 0;
 }
