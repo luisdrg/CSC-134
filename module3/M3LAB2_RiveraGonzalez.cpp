@@ -17,16 +17,16 @@ int main() {
  if(numericalGrade >= 90 && numericalGrade <= 100) {
     cout << "Your letter grade is: A" << endl;
  }  
- if (numericalGrade >= 80 && numericalGrade <= 89){
+ if (numericalGrade >= 80 && numericalGrade < 90){
     cout << "Your letter grade is: B" << endl;
  }  
- if (numericalGrade >= 70 && numericalGrade <= 79){
+ if (numericalGrade >= 70 && numericalGrade < 80){
     cout << "Your letter grade is: C" << endl;
  }  
- if (numericalGrade >= 60 && numericalGrade <= 69){
+ if (numericalGrade >= 60 && numericalGrade < 70){
     cout << "Your letter grade is: D" << endl;
  }  
- if (numericalGrade >= 0 && numericalGrade <= 59){
+ if (numericalGrade >= 0 && numericalGrade < 60){
     cout << "Your letter grade is: F" << endl;
  }  
  if (numericalGrade > 100){
@@ -35,6 +35,6 @@ int main() {
  if(numericalGrade < 0){
     cout << "Invalid! Grades canot be negative." << endl;
  }
- 
+
  return 0;
 }
