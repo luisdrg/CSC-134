@@ -79,9 +79,29 @@ void question2 (){
     cout << "Total: \t\t$" << total << endl;
     cout << "Have a nice day!\n\n";
 }
+
+
+void question4 (){
+    cout << "\n\n---------------Q4---------------" << endl;
+    srand(time(0));
+    const int MAX = 100; // numbers from 1-100
+    int num1  = (rand() % MAX) + 1;
+    int num2  = (rand() % MAX) + 1;
+    int answer;
+
+    cout << "What is " << num1 << " plus " << num2 << "? ";
+    cin >> answer;
+
+    if(num1 + num2 == answer) {
+        cout << "Correct!\n";
+    } else {
+        cout << "Incorrect!\n";
+    }
+}
 int main() {
     //question1();
-    question2();
+    //question2();
+    question4();
     return 0;
 }
 
