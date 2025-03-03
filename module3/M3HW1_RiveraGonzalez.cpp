@@ -19,7 +19,7 @@ string makeLowerCase(string input) {
     }
 
 void question1 (){
-    cout << "---------------Q1---------------" << endl;
+    cout << "------------------------------Q1------------------------------" << endl;
 
     string input;
     cout << "Hello, I’m a C++ program!\nDo you like me? Please type yes or no: ";
@@ -40,7 +40,7 @@ void question1 (){
 }
 
 void question2 (){
-    cout << "\n\n---------------Q2---------------" << endl;
+    cout << "\n\n------------------------------Q2------------------------------" << endl;
     // Set up the Variables
     string store_name = "Cookout";
     string food_name = "Burger";
@@ -80,9 +80,13 @@ void question2 (){
     cout << "Have a nice day!\n\n";
 }
 
+void question3 (){
+    cout << "\n\n------------------------------Q3------------------------------" << endl;
+
+}
 
 void question4 (){
-    cout << "\n\n---------------Q4---------------" << endl;
+    cout << "\n\n------------------------------Q4------------------------------" << endl;
     srand(time(0));
     const int MAX = 100; // numbers from 1-100
     int num1  = (rand() % MAX) + 1;
@@ -93,14 +97,15 @@ void question4 (){
     cin >> answer;
 
     if(num1 + num2 == answer) {
-        cout << "Correct!\n";
+        cout << "Correct!\n\n";
     } else {
-        cout << "Incorrect!\n";
+        cout << "Incorrect!\n\n";
     }
 }
 int main() {
-    //question1();
-    //question2();
+    question1();
+    question2();
+    question3();
     question4();
     return 0;
 }
