@@ -9,6 +9,16 @@ using namespace std;
 
 
 int main() {
+    int count = 0;
+    while(count < 5) {
+        cout << "Hello\n";
+        count++;
+    }
+    // Program 1
+
+    cout << "\n\n";
+
+    //Program 2
     const int MIN_NUM = 1;
     const int MAX_NUM = 10;
     cout << "Table of Squares" << endl;
