@@ -68,7 +68,7 @@ void main_menu() {
 // now we have to actually write the functions.
 // They go here, after main().
 void choice_front_door() {
-  cout << "----------------------------------------------------------------------------------\n";
+    cout << "------------------------------------------------------------------------------------------------\n";
   cout << "Try the front door." << endl;
   cout << "It's locked. " << endl;
   cout << "Do you:" << endl;
@@ -84,7 +84,7 @@ void choice_front_door() {
   }
 }
 void choice_back_door() {
-    cout << "----------------------------------------------------------------------------------\n";
+    cout << "------------------------------------------------------------------------------------------------\n";
     cout << "You walk around to the back of the house. \nThe yard is messy, with weeds growing through cracked stone paths. \nYou spot a slightly open door. "
          << "\nDo you go inside or decide to head back?" << endl;
     cout << "1. Go inside" << endl;
@@ -102,13 +102,13 @@ void choice_back_door() {
 
 
 void choice_go_home() {
-    cout << "----------------------------------------------------------------------------------\n";
+    cout << "------------------------------------------------------------------------------------------------\n";
     cout << "You decide this house isn't worth the trouble and start walking back home. It’s just another ordinary day." << endl;
 }
 
 void choice_go_inside() {
-    cout << "----------------------------------------------------------------------------------\n";
-    cout << "\nYou step inside the house. The air feels cold, and a faint smell of mildew lingers. "
+    cout << "------------------------------------------------------------------------------------------------\n";
+    cout << "You step inside the house. The air feels cold, and a faint smell of mildew lingers. "
          << "\nThe dimly lit room reveals strange symbols etched on the walls, and an eerie creak echoes as you take another step. "
          << "\nDo you:" << endl;
     cout << "1. Investigate the symbols on the wall" << endl;
@@ -129,20 +129,20 @@ void choice_go_inside() {
 }
 
 void choice_investigate_symbols() {
-    cout << "----------------------------------------------------------------------------------\n";
+    cout << "------------------------------------------------------------------------------------------------\n";
     cout << "As you examine the symbols, they seem to form a pattern, but the meaning is unclear. "
-         << "You feel a strange chill, as if you’re being watched." << endl;
+         << "\nYou feel a strange chill, as if you’re being watched." << endl;
 }
 
 void choice_explore_basement() {
-    cout << "----------------------------------------------------------------------------------\n";
+    cout << "------------------------------------------------------------------------------------------------\n";
     cout << "You open the basement door, and a musty smell hits you. As you descend the creaking stairs, "
-         << "your flashlight flickers, and you hear a faint rustling in the shadows." << endl;
+         << "\nyour flashlight flickers, and you hear a faint rustling in the shadows." << endl;
 }
 
 void choice_leave_immediately() {
-    cout << "----------------------------------------------------------------------------------\n";
-    cout << "Uneasy, you decide it's better not to tempt fate. You leave the house, vowing never to return." << endl;
+    cout << "------------------------------------------------------------------------------------------------\n";
+    cout << "Uneasy, you decide it's better not to tempt fate.\nYou leave the house, vowing never to return." << endl;
 }
 
 // any new choices go here
