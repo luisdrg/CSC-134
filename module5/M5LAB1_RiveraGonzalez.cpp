@@ -6,21 +6,6 @@
 
 #include <iostream>
 using namespace std;
-
-/*
-CSC 134
-M5LAB1 - Choose Your Own Adventure
-[name]
-[date]
-This template serves as a starting point
-for your own program. We'll be using
-void functions to tell a simple story,
-where the user gets to make choices.
-
-You can fork this template by clicking on the name above, then click the three
-dots on the top right, and click 'fork repl'. This makes a copy for you to use.
-*/
-
 // Function Prototypes
 // Any functions you make will need to
 // be listed here, in this format, at the top.
@@ -32,7 +17,9 @@ void choice_back_door();
 void choice_go_home();
 // TODO: add more choices here
 void choice_go_inside();
-
+void choice_investigate_symbols();
+void choice_explore_basement();
+void choice_leave_immediately();
 int main() {
   cout << "M5LAB1 - Choose Your Own Adventure" << endl;
   // load up the main menu
@@ -121,11 +108,41 @@ void choice_go_home() {
 
 void choice_go_inside() {
     cout << "----------------------------------------------------------------------------------\n";
-    cout << "You step inside the house. The room is quiet and covered in dust, with old furniture scattered around. "
-         << "After a quick look around, you realize there's nothing much to see here. You decide to head back outside, glad you satisfied your curiosity." << endl;
+    cout << "\nYou step inside the house. The air feels cold, and a faint smell of mildew lingers. "
+         << "\nThe dimly lit room reveals strange symbols etched on the walls, and an eerie creak echoes as you take another step. "
+         << "\nDo you:" << endl;
+    cout << "1. Investigate the symbols on the wall" << endl;
+    cout << "2. Explore a door leading to the basement" << endl;
+    cout << "3. Leave immediately" << endl;
+    
+    int choice;
+    cout << "Choose: ";
+    cin >> choice;
+
+    if (1 == choice) {
+        choice_investigate_symbols();
+    } else if (2 == choice) {
+        choice_explore_basement();
+    } else if (3 == choice) {
+        choice_leave_immediately();
+    }
 }
 
+void choice_investigate_symbols() {
+    cout << "----------------------------------------------------------------------------------\n";
+    cout << "As you examine the symbols, they seem to form a pattern, but the meaning is unclear. "
+         << "You feel a strange chill, as if you’re being watched." << endl;
+}
 
+void choice_explore_basement() {
+    cout << "----------------------------------------------------------------------------------\n";
+    cout << "You open the basement door, and a musty smell hits you. As you descend the creaking stairs, "
+         << "your flashlight flickers, and you hear a faint rustling in the shadows." << endl;
+}
 
+void choice_leave_immediately() {
+    cout << "----------------------------------------------------------------------------------\n";
+    cout << "Uneasy, you decide it's better not to tempt fate. You leave the house, vowing never to return." << endl;
+}
 
 // any new choices go here
