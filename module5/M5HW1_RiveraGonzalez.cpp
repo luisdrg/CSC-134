@@ -83,7 +83,7 @@ void question_2() {
     cout << "Volume: " << volume << endl;
 }
 
-// Q2
+// Q3
 void question_3() {
     cout << "-------------------------Question 3-------------------------" << endl;
     string roman_num[] = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
