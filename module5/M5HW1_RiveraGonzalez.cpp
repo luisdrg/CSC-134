@@ -87,8 +87,7 @@ void question_2() {
 void question_3() {
     cout << "-------------------------Question 3-------------------------" << endl;
     string roman_num[] = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
-    cout << roman_num[1];
-
+    
     while(true){
         cout << "Enter a number (1 - 10): ";
         int input;
